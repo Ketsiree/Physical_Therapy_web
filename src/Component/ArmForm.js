@@ -39,8 +39,10 @@ const ArmForm = props => {
 
         let id = (armForms.length === 0) ? 1 : armForms[armForms.length - 1].id + 1
         firestore.collection("armForms").doc(id + '').set({ id, date,phy, comment, values })
+        console.log('Dataaaaa');
         alert("ประเมินเสร็จสิ้น")
     }
+    
     return (
         <div>
             

@@ -1,6 +1,5 @@
-import React from 'react'
-import ListItems from './ListItems'
-
+import React from 'react';
+import ListItems from './ListItems';
 
 const DisplayArmForm = () => {
 
@@ -11,5 +10,4 @@ const DisplayArmForm = () => {
     )
 }
 
-export default DisplayArmForm
-
+export default DisplayArmForm;

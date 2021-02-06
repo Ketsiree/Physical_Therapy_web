@@ -81,5 +81,4 @@ const Lung = () => {
         </div>
             );
 }
-
 export default Lung;

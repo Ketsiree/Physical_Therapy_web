@@ -128,5 +128,4 @@ const Cardiac = () => {
         </div>
             );
 }
-
 export default Cardiac;

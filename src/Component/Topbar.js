@@ -25,7 +25,6 @@ const Topbar = () => {
                         <NavDropdown.Item href="/Twelve">12 Standard-Workout</NavDropdown.Item>
                         <NavDropdown.Item href="/Cardiac">Cardiac Rehabilitation</NavDropdown.Item>
                         <NavDropdown.Item href="/Lung">Pulmonary Rehabilitation</NavDropdown.Item>
-                        <NavDropdown.Item href="/AppA">Try</NavDropdown.Item>
                         <NavDropdown.Divider />
                         <NavDropdown.Item href="/Diary">Diary</NavDropdown.Item>
                     </NavDropdown>
@@ -46,5 +45,4 @@ const Topbar = () => {
         </div>
     );
 }
-
 export default Topbar;
