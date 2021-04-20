@@ -1,10 +1,49 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import React from 'react';
-import { Card,CardImg, CardTitle, CardText,CardImgOverlay } from 'reactstrap';
+import React, { useState } from 'react';
+import { Card,CardImg, CardTitle, CardText,CardImgOverlay,Button } from 'reactstrap';
 import './Twelve.css';
 import ArmForm from './ArmForm';
+import Modal from 'react-bootstrap/Modal'
 
-const Twelve = () => {
+
+function Twelve() {
+    const [show, setShow] = useState(false);
+        const handleClose = () => setShow(false);
+        const handleShow = () => setShow(true);
+        const [show1, setShow1] = useState(false);
+        const handleClose1 = () => setShow1(false);
+        const handleShow1 = () => setShow1(true);
+        const [show2, setShow2] = useState(false);
+        const handleClose2 = () => setShow2(false);
+        const handleShow2 = () => setShow2(true);
+        const [show3, setShow3] = useState(false);
+        const handleClose3 = () => setShow3(false);
+        const handleShow3 = () => setShow3(true);
+        const [show4, setShow4] = useState(false);
+        const handleClose4 = () => setShow4(false);
+        const handleShow4 = () => setShow4(true);
+        const [show5, setShow5] = useState(false);
+        const handleClose5 = () => setShow5(false);
+        const handleShow5 = () => setShow5(true);
+        const [show6, setShow6] = useState(false);
+        const handleClose6 = () => setShow6(false);
+        const handleShow6 = () => setShow6(true);
+        const [show7, setShow7] = useState(false);
+        const handleClose7 = () => setShow7(false);
+        const handleShow7 = () => setShow7(true);
+        const [show8, setShow8] = useState(false);
+        const handleClose8 = () => setShow8(false);
+        const handleShow8 = () => setShow8(true);
+        const [show9, setShow9] = useState(false);
+        const handleClose9 = () => setShow9(false);
+        const handleShow9 = () => setShow9(true);
+        const [show10, setShow10] = useState(false);
+        const handleClose10 = () => setShow10(false);
+        const handleShow10 = () => setShow10(true);
+        const [show11, setShow11] = useState(false);
+        const handleClose11 = () => setShow11(false);
+        const handleShow11 = () => setShow11(true);
+
     return (
         <div>
             <style>
@@ -19,301 +58,279 @@ const Twelve = () => {
             <br />
             <br />
 
-            <div className="myVi">
+           
+            <div className="myS">
+        <Card style={{ margin: 20, padding: 20,backgroundColor:"#ffff88" }}>
+        <CardImg top width="100%" src="https://www.ocare.co.th/blog/wp-content/uploads/2019/04/%E0%B8%81%E0%B8%B2%E0%B8%9E%E0%B8%A0%E0%B8%B2%E0%B8%9E1.jpg" style={{  width: 405, height: 250}} />
             <br />
+            <CardTitle><h5>ท่ากายภาพท่าที่ 1 ยกแขนขึ้น-ลง</h5></CardTitle>
+            <Button variant="primary" onClick={handleShow}>
+                Click for watch video
+            </Button>
+      <Modal show={show} onHide={handleClose} size="lg" aria-labelledby="example-modal-sizes-title-lg">
+        <Modal.Header closeButton>
+          <Modal.Title>ท่ากายภาพท่าที่ 1 ยกแขนขึ้น-ลง</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+            <iframe width="760" height="550" src="https://www.youtube.com/embed/ASV8Y-5Fwv4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
+        </Card>
 
-            <h1>ท่ากายภาพมาตรฐาน 12 ท่า</h1>
-            <br />
-            <h2>ท่าที่ 1 ยกแขนขึ้น-ลง</h2>
-            <br />
-            </div>
+       <Card style={{ margin: 20, padding: 20,backgroundColor:"#bcf8cf" }}>
+       <CardImg top width="100%" src="https://farm1.staticflickr.com/886/41172418821_5c6c42d69c_c.jpg" style={{  width: 405, height: 250 }} />
+       <br />
+            <CardTitle><h5>ท่ากายภาพท่าที่ 2 กางหุบแขน</h5></CardTitle>
+       <Button variant="primary" onClick={handleShow1} >
+       Click for watch video
+        </Button>
+       <Modal show={show1} onHide={handleClose1} size="lg" aria-labelledby="example-modal-sizes-title-lg" >
+        <Modal.Header closeButton>
+          <Modal.Title>ท่ากายภาพท่าที่ 2 กางหุบแขน</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+        <iframe width="760" height="550" src="https://www.youtube.com/embed/1E1Y_u0vVD4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose1}>
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
+    </Card>
 
-            <div className="myVi1">
+    <Card style={{ margin: 20, padding: 20,backgroundColor:"#ffd6da" }}>
+        <CardImg top width="100%" src="https://www.ocare.co.th/blog/wp-content/uploads/2019/04/%E0%B8%81%E0%B8%B2%E0%B8%A2%E0%B8%A0%E0%B8%B2%E0%B8%9E-3.jpg" style={{  width: 405, height: 250}} />
             <br />
-            <iframe width="650" height="450" src="https://www.youtube.com/embed/ASV8Y-5Fwv4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
+            <CardTitle><h5>ท่ากายภาพท่าที่ 3 หมุนข้อไหล่ เข้า-ออก</h5></CardTitle>
+            <Button variant="primary" onClick={handleShow2}>
+                Click for watch video
+            </Button>
+      <Modal show={show2} onHide={handleClose2} size="lg" aria-labelledby="example-modal-sizes-title-lg">
+        <Modal.Header closeButton>
+          <Modal.Title>ท่ากายภาพท่าที่ 3 หมุนข้อไหล่ เข้า-ออก</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+            <iframe width="760" height="550" src="https://www.youtube.com/embed/jfrSk89jk3k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose2}>
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
+        </Card>
+      </div>
 
+      <div className="myS">
+       <Card style={{ margin: 20, padding: 20,backgroundColor:"#ffb384" }}>
+       <CardImg top width="100%" src="https://www.ocare.co.th/blog/wp-content/uploads/2019/04/%E0%B8%81%E0%B8%B2%E0%B8%A2%E0%B8%A0%E0%B8%B2%E0%B8%9E4.jpg" style={{  width: 405, height: 250 }} />
+       <br />
+            <CardTitle><h5>ท่ากายภาพท่าที่ 4 งอ-เหยียดข้อศอก</h5></CardTitle>
+       <Button variant="primary" onClick={handleShow3} >
+       Click for watch video
+        </Button>
+       <Modal show={show3} onHide={handleClose3} size="lg" aria-labelledby="example-modal-sizes-title-lg" >
+        <Modal.Header closeButton>
+          <Modal.Title>ท่ากายภาพท่าที่ 4 งอ-เหยียดข้อศอก</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+        <iframe width="760" height="550" src="https://www.youtube.com/embed/uRgV11hv8Ak" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose3}>
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
+    </Card>
+    
+    <Card style={{ margin: 20, padding: 20,backgroundColor:"#b6e3e9" }}>
+        <CardImg top width="100%" src="https://www.ocare.co.th/blog/wp-content/uploads/2019/04/%E0%B8%81%E0%B8%B2%E0%B8%A2%E0%B8%A0%E0%B8%B2%E0%B8%9E5.jpg" style={{  width: 405, height: 250}} />
             <br />
-            <br />
-            <div className="myVi">
-            <span align="center" class="border border-warning"><h5>จับบริเวณข้อศอก และข้อมือของผู้ป่วยให้หงายขึ้น ยกขึ้นตรงๆ </h5>
-            <h5>ตามแนวระนาบข้างลำตัวเป็นจังหวะช้าๆ ยกขึ้นให้สุดจนถึงขนานกับหู แล้วเอาลงช้าๆเป็นจังหวะ</h5>
-            </span>
+            <CardTitle><h5>ท่ากายภาพท่าที่ 5 กระดกข้อมือขึ้น-ลง / ซ้าย-ขวา</h5></CardTitle>
+            <Button variant="primary" onClick={handleShow4}>
+                Click for watch video
+            </Button>
+      <Modal show={show4} onHide={handleClose4} size="lg" aria-labelledby="example-modal-sizes-title-lg">
+        <Modal.Header closeButton>
+          <Modal.Title>ท่ากายภาพท่าที่ 5 กระดกข้อมือขึ้น-ลง / ซ้าย-ขวา</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+            <iframe width="760" height="550" src="https://www.youtube.com/embed/8nqAa9fKRmQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose4}>
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
+        </Card>
+        <Card style={{ margin: 20, padding: 20,backgroundColor:"#dfefdd" }}>
+       <CardImg top width="100%" src="https://www.ocare.co.th/blog/wp-content/uploads/2019/04/%E0%B8%81%E0%B8%B2%E0%B8%A2%E0%B8%A0%E0%B8%B2%E0%B8%9E6.jpg" style={{  width: 405, height: 250 }} />
+       <br />
+            <CardTitle><h5>ท่ากายภาพท่าที่ 6 งอข้อนิ้วมือ</h5></CardTitle>
+       <Button variant="primary" onClick={handleShow5} >
+       Click for watch video
+        </Button>
+       <Modal show={show5} onHide={handleClose5} size="lg" aria-labelledby="example-modal-sizes-title-lg" >
+        <Modal.Header closeButton>
+          <Modal.Title>ท่ากายภาพท่าที่ 6 งอข้อนิ้วมือ</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+        <iframe width="760" height="550" src="https://www.youtube.com/embed/R0TMRdHlKKM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose5}>
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
+    </Card>
+      </div>
 
-            <br />
-            </div>
+      <div className="myS">
+    <Card style={{ margin: 20, padding: 20,backgroundColor:"#bbd2e7" }}>
+       <CardImg top width="100%" src="https://www.ocare.co.th/blog/wp-content/uploads/2019/04/%E0%B8%81%E0%B8%B2%E0%B8%A2%E0%B8%A0%E0%B8%B2%E0%B8%9E7.jpg" style={{  width: 405, height: 250 }} />
+       <br />
+            <CardTitle><h5>ท่ากายภาพท่าที่ 7 กางนิ้วมือ</h5></CardTitle>
+       <Button variant="primary" onClick={handleShow6} >
+       Click for watch video
+        </Button>
+       <Modal show={show6} onHide={handleClose6} size="lg" aria-labelledby="example-modal-sizes-title-lg" >
+        <Modal.Header closeButton>
+          <Modal.Title>ท่ากายภาพท่าที่ 7 กางนิ้วมือ</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+        <iframe width="760" height="550" src="https://www.youtube.com/embed/0NJ6R93liY8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose6}>
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
+    </Card>
 
+    <Card style={{ margin: 20, padding: 20,backgroundColor:"#f6e7b4" }}>
+        <CardImg top width="100%" src="https://www.ocare.co.th/blog/wp-content/uploads/2019/04/%E0%B8%81%E0%B8%B2%E0%B8%A2%E0%B8%A0%E0%B8%B2%E0%B8%9E8.jpg" style={{  width: 405, height: 250}} />
             <br />
-            <br />
-            
-            <div className="myVi">
-            <h1>------------------------------------------------------------</h1>
-            <br />
-            <br />
-            <h2>ท่าที่ 2 กาง-หุบแขน</h2>
-            <br />
-            </div>
+            <CardTitle><h5>ท่ากายภาพท่าที่ 8 งอ-เหยียดข้อสะโพก</h5></CardTitle>
+            <Button variant="primary" onClick={handleShow7}>
+                Click for watch video
+            </Button>
+      <Modal show={show7} onHide={handleClose7} size="lg" aria-labelledby="example-modal-sizes-title-lg">
+        <Modal.Header closeButton>
+          <Modal.Title>ท่ากายภาพท่าที่ 8 งอ-เหยียดข้อสะโพก</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+            <iframe width="760" height="550" src="https://www.youtube.com/embed/ZVxif3DHOWI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose7}>
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
+        </Card>
 
-            <div className="myVi1">
-            <br />
-            <iframe width="650" height="450" src="https://www.youtube.com/embed/1E1Y_u0vVD4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
+       <Card style={{ margin: 20, padding: 20,backgroundColor:"#fcdee2" }}>
+       <CardImg top width="100%" src="https://www.ocare.co.th/blog/wp-content/uploads/2019/04/%E0%B8%81%E0%B8%B2%E0%B8%A2%E0%B8%A0%E0%B8%B2%E0%B8%9E9.jpg" style={{  width: 405, height: 250 }} />
+       <br />
+            <CardTitle><h5>ท่ากายภาพท่าที่ 9 งอ-เหยียดข้อสะโพก</h5></CardTitle>
+       <Button variant="primary" onClick={handleShow8} >
+       Click for watch video
+        </Button>
+       <Modal show={show8} onHide={handleClose8} size="lg" aria-labelledby="example-modal-sizes-title-lg" >
+        <Modal.Header closeButton>
+          <Modal.Title>ท่ากายภาพท่าที่ 9 งอ-เหยียดข้อสะโพก</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+        <iframe width="760" height="550" src="https://www.youtube.com/embed/l24LaAFFYtg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose8}>
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
+    </Card>
 
-            <br />
-            <br />
-            <div className="myVi">
-            <span align="center" class="border border-warning"><h5>จับบริเวณข้อศอก และข้อมือของผู้ป่วยพร้อมกางแขนออกมาด้านข้าง </h5>
-            <h5>ค่อยๆงอข้อศอกและเหยียดแขนขึ้นชิดศีรษะ แล้วจึงงอข้อศอกกลับมาในทิศทางเดิม</h5>
-            </span>
+      </div>
 
-            <br />
-            </div>
+      <div className="myS">
+      <Card style={{ margin: 20, padding: 20,backgroundColor:"#bcf8cf" }}>
+       <CardImg top width="100%" src="https://www.ocare.co.th/blog/wp-content/uploads/2019/04/%E0%B8%81%E0%B8%B2%E0%B8%A2%E0%B8%A0%E0%B8%B2%E0%B8%9E10.jpg" style={{  width: 405, height: 250 }} />
+       <br />
+            <CardTitle><h5>ท่ากายภาพท่าที่ 10 กาง-หุบข้อสะโพก</h5></CardTitle>
+       <Button variant="primary" onClick={handleShow9} >
+       Click for watch video
+        </Button>
+       <Modal show={show9} onHide={handleClose9} size="lg" aria-labelledby="example-modal-sizes-title-lg" >
+        <Modal.Header closeButton>
+          <Modal.Title>ท่ากายภาพท่าที่ 10 กาง-หุบข้อสะโพก</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+        <iframe width="760" height="550" src="https://www.youtube.com/embed/OeMy1CaJU3Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose9}>
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
+    </Card>
 
+    <Card style={{ margin: 20, padding: 20,backgroundColor:"#ffcfca" }}>
+        <CardImg top width="100%" src="https://www.ocare.co.th/blog/wp-content/uploads/2019/04/%E0%B8%81%E0%B8%B2%E0%B8%A2%E0%B8%A0%E0%B8%B2%E0%B8%9E11.jpg" style={{  width: 405, height: 250}} />
             <br />
-            <br />
-            
-            <div className="myVi">
-            <h1>------------------------------------------------------------</h1>
-            <br />
-            <br />
-            <h2>ท่าที่ 3 หมุนข้อไหล่ เข้า-ออก</h2>
-            <br />
-            </div>
+            <CardTitle><h5>ท่ากายภาพท่าที่ 11 กระดกข้อเท้าขึ้น-ลง / ซ้าย-ขวา</h5></CardTitle>
+            <Button variant="primary" onClick={handleShow10}>
+                Click for watch video
+            </Button>
+      <Modal show={show10} onHide={handleClose10} size="lg" aria-labelledby="example-modal-sizes-title-lg">
+        <Modal.Header closeButton>
+          <Modal.Title>ท่ากายภาพท่าที่ 11 กระดกข้อเท้าขึ้น-ลง / ซ้าย-ขวา</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+            <iframe width="760" height="550" src="https://www.youtube.com/embed/hYWR6d7IwJE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose10}>
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
+        </Card>
 
-            <div className="myVi1">
-            <br />
-            <iframe width="650" height="450" src="https://www.youtube.com/embed/jfrSk89jk3k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
+       <Card style={{ margin: 20, padding: 20,backgroundColor:"#e7d2ef" }}>
+       <CardImg top width="100%" src="https://www.ocare.co.th/blog/wp-content/uploads/2019/04/%E0%B8%81%E0%B8%B2%E0%B8%A2%E0%B8%A0%E0%B8%B2%E0%B8%9E12.jpg" style={{  width: 405, height: 250 }} />
+       <br />
+            <CardTitle><h5>ท่ากายภาพท่าที่ 12 กระดกนิ้วเท้าขึ้น-ลง / กาง-หุบ</h5></CardTitle>
+       <Button variant="primary" onClick={handleShow11} >
+       Click for watch video
+        </Button>
+       <Modal show={show11} onHide={handleClose11} size="lg" aria-labelledby="example-modal-sizes-title-lg" >
+        <Modal.Header closeButton>
+          <Modal.Title>ท่ากายภาพท่าที่ 12 กระดกนิ้วเท้าขึ้น-ลง / กาง-หุบ</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+        <iframe width="760" height="550" src="https://www.youtube.com/embed/SkyxqArxaq8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose11}>
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
+    </Card>
 
-            <br />
-            <br />
-            <div className="myVi">
-            <span align="center" class="border border-warning"><h5>จับบริเวณข้อศอก และข้อมือของผู้ป่วยพร้อมกางแขนออกมาด้านข้างตั้งเป็น</h5>
-            <h5>มุมฉาก 90 องศา ดันแขนผู้ป่วยลงด้านบน 10 ครั้ง และดันลงด้านล่าง 10 ครั้ง</h5>
-            </span>
-
-            <br />
-            <br />
-            <br />
-
-            <div className="myVi">
-            <h1>------------------------------------------------------------</h1>
-            <br />
-            <br />
-            <h2>ท่าที่ 4 งอ-เหยียดข้อศอก</h2>
-            <br />
-            </div>
-
-            <div className="myVi2">
-            <br />
-            <iframe width="650" height="450" src="https://www.youtube.com/embed/uRgV11hv8Ak" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-
-            <br />
-            <br />
-            <div className="myVi">
-            <span align="center" class="border border-danger"><h5>วางแขนของผู้ป่วยแนบลำตัว แล้วหงายฝ่ามือขึ้น</h5>
-            <h5>งอข้อศอกขึ้นจนมือแตะไหล่ผู้ป่วย แล้วจึงเหยียดออกช้าๆ</h5>
-            </span>
-            <br />
-            </div>
-
-            <br />
-            <br />
-            
-            <div className="myVi">
-            <h1>------------------------------------------------------------</h1>
-            <br />
-            <br />
-            <h2>ท่าที่ 5 กระดกข้อมือขึ้น-ลง/ซ้าย-ขวา</h2>
-            <br />
-            </div>
-
-            <div className="myVi2">
-            <br />
-            <iframe width="650" height="450" src="https://www.youtube.com/embed/8nqAa9fKRmQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-
-            <br />
-            <br />
-            <div className="myVi">
-            <span align="center" class="border border-danger"><h5>จับบริเวณข้อมือของผู้ป่วยเเล้วกระดกมือขึ้น-ลง 10 ครั้ง</h5>
-            <h5>เเล้วจึงจับมือบิดไปทางซ้าย-ขวา 10 ครั้ง</h5>
-            </span>
-            <br />
-            </div>
-            <br />
-            <br />
-
-            <div className="myVi">
-            <h1>------------------------------------------------------------</h1>
-            <br />
-            <br />
-            <h2>ท่าที่ 6 งอข้อนิ้วมือ</h2>
-            <br />
-            </div>
-
-            <div className="myVi3">
-            <br />
-            <iframe width="650" height="450" src="https://www.youtube.com/embed/R0TMRdHlKKM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-
-            <br />
-            <br />
-            <div className="myVi">
-            <span align="center" class="border border-success"><h5>กำมือผู้ป่วย และกางออก 10 ครั้ง พับนิ้วของผู้ป่วยทีละนิ้วเรียงกันไป 10 ครั้ง</h5>
-            <h5>จับนิ้วหัวแม่มือ เเล้วอีกข้างจับนิ้วที่เหลิือมาแตะที่นิ้วหัวแม่มือทีละนิ้ว 10 ครั้ง</h5>
-            </span>
-
-            <br />
-            </div>
-
-            <br />
-            <br />
-            
-            <div className="myVi">
-            <h1>------------------------------------------------------------</h1>
-            <br />
-            <br />
-            <h2>ท่าที่ 7 กางนิ้วมือ</h2>
-            <br />
-            </div>
-
-            <div className="myVi3">
-            <br />
-            <iframe width="650" height="450" src="https://www.youtube.com/embed/0NJ6R93liY8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-
-            <br />
-            <br />
-            <div className="myVi">
-            <span align="center" class="border border-success"><h5>กางนิ้วมือผู้ป่วยเข้า-ออก 10 ครั้ง</h5>
-            </span>
-            <br />
-            </div>
-            <br />
-
-            </div>
- 
-            <div className="myVi">
-            <h1>------------------------------------------------------------</h1>
-            <br />
-            <br />
-            <h2>ท่าที่ 8 งอ-เหยียดข้อสะโพก</h2>
-            <br />
-            </div>
-
-            <div className="myVi4">
-            <br />
-            <iframe width="650" height="450" src="https://www.youtube.com/embed/ZVxif3DHOWI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-
-            <br />
-            <br />
-            <div className="myVi">
-            <span align="center" class="border border-warning"><h5>ยกขาขึ้นเเล้ววางตั้งไขว้กับขาอีกข้าง</h5>
-            <h5>ค่อยๆกดน้ำหนักลงจนตึง จึงคลายออก ทำด้านละ 10 ครั้ง</h5>
-            </span>
-            <br />
-            </div>
-
-            <br />
-            <br />
-            <div className="myVi">
-            <h1>------------------------------------------------------------</h1>
-            <br />
-            <br />
-            <h2>ท่าที่ 9 งอ-เหยียดข้อสะโพก</h2>
-            <br />
-            </div>
-
-            <div className="myVi4">
-            <br />
-            <iframe width="650" height="450" src="https://www.youtube.com/embed/l24LaAFFYtg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-
-            <br />
-            <br />
-            <div className="myVi">
-            <span align="center" class="border border-warning"><h5>จับบริเวณข้อเท้า และ ข้อเข่าด้านล่าง เเล้วยกขาขึ้นเป็นมุมฉาก ทำข้างละ 10 ครั้ง</h5>
-            </span>
-            <br />
-            </div>
-
-            <br />
-            <br />
-            <div className="myVi">
-            <h1>------------------------------------------------------------</h1>
-            <br />
-            <br />
-            <h2>ท่าที่ 10 กาง-หุบข้อสะโพก</h2>
-            <br />
-            </div>
-
-            <div className="myVi5">
-            <br />
-            <iframe width="650" height="450" src="https://www.youtube.com/embed/OeMy1CaJU3Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-
-            <br />
-            <br />
-            <div className="myVi">
-            <span align="center" class="border border-primary"><h5>จับบริเวณข้อเท้า และข้อเข่า ยกขาขึ้นเล็กน้อย เเล้วกางออกด้านข้าง 45 องศาเเล้วหุบเข้า ข้างละ 10 ครั้ง</h5>
-            </span>
-            <br />
-            </div>
-            <br />
-            <br />
-
-            <br />
-
-            <div className="myVi">
-            <h1>------------------------------------------------------------</h1>
-            <br />
-            <br />
-            <h2>ท่าที่ 11 กระดกข้อเท้าขึ้น-ลง / ซ้าย-ขวา</h2>
-            <br />
-            </div>
-
-            <div className="myVi5">
-            <br />
-            <iframe width="650" height="450" src="https://www.youtube.com/embed/hYWR6d7IwJE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-
-            <br />
-            <br />
-            <div className="myVi">
-            <span align="center" class="border border-primary"><h5>ช้อนส้นเท้า และจับบริเวณหน้าแข้ง ยกส้นเท้าขึ้นจนรู้สึกตึงค้างไว้ 10 วินาที เเล้วจึงเอาลง ทำข้างละ 10 ครั้ง</h5>
-            <h5>หลังจากนั้นบิดข้อเท้าไปทางซ้าย และขวาสลับกัน 10 ครั้ง</h5>
-            </span>
-
-            <br />
-            </div>
-
-            <br />
-            <br />
-            <div className="myVi">
-            <h1>------------------------------------------------------------</h1>
-            <br />
-            <br />
-            <h2>ท่าที่ 12 กระดกนิ้วเท้าขึ้น-ลง/กาง-หุบ</h2>
-            <br />
-            </div>
-
-            <div className="myVi1">
-            <br />
-            <iframe width="650" height="450" src="https://www.youtube.com/embed/SkyxqArxaq8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-
-            <br />
-            <br />
-            <div className="myVi">
-            <span align="center" class="border border-primary"><h5>กดปลายนิ้วเท้าขึ้น-ลง สลับกัน 10 ครั้ง</h5>
-            <h5>กางนิ้วเท้าให้รู้สึกตึงเเล้วหุบ ข้างละ 10 ครั้ง</h5>
-            </span>
-
-            <br />
-            </div>
+    </div>
 
             <div className="myVi">
             <h1>------------------------------------------------------------</h1>

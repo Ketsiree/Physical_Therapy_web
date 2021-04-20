@@ -117,7 +117,7 @@ return (
                 <Form.Control placeholder="24 year" input type="text" onChange={(e) => setAge(e.target.value)}/>
             </Form.Group>
 
-            <Form.Group controlId="formBasicCheckbox">
+            {/* <Form.Group controlId="formBasicCheckbox">
                 <Form.Check type="checkbox" value="Arms" label="Arms" onClick={(e) => setArms(e.target.value) } />
                 <Form.Check type="checkbox" value="Hip" label="Hip" onClick={(e) => setHip(e.target.value)} />
                 <Form.Check type="checkbox" value="Feet" label="Feet" onClick={(e) => setFeet(e.target.value)} />
@@ -125,7 +125,7 @@ return (
                 <Form.Check type="checkbox" value="cardiac" label="Cardiac" onClick={(e) => setCardiac(e.target.value)} />
                 <Form.Check type="checkbox" value="lung" label="Pulmonary" onClick={(e) => setLung(e.target.value)} />
             
-            </Form.Group>
+            </Form.Group> */}
                     <Button variant="primary" type="enter" onClick={addTask}  >
                     Enter
                     </Button>
